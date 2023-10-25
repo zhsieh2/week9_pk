@@ -8,12 +8,7 @@ function multi_compartment_model()
     k43 = 0.1;   % Transfer rate constant from compartment 4 to compartment 3
     k_elim = 0.05; % Elimination rate constant
     
-    V1 = 100;    % Volume of compartment 1 (mL)
-    V2 = 200;    % Volume of compartment 2 (mL)
-    V3 = 150;    % Volume of compartment 3 (mL)
-    V4 = 50;     % Volume of compartment 4 (mL)
-    
-    C1_0 = 10;   % Initial concentration in compartment 1 (mg/mL)
+    C1_0 = 100;   % Initial concentration in compartment 1 (mg/mL)
     C2_0 = 0;    % Initial concentration in compartment 2 (mg/mL)
     C3_0 = 0;    % Initial concentration in compartment 3 (mg/mL)
     C4_0 = 0;    % Initial concentration in compartment 4 (mg/mL)

@@ -7,7 +7,7 @@ function multi_compartment_with_bbb_model
     k34 = 0.15;  % Transfer rate constant from compartment 3 to compartment 4
     k43 = 0.1;   % Transfer rate constant from compartment 4 to compartment 3
     k_elim = 0.05; % Common elimination rate constant
-    k_bbb = 0.005;  % Transfer rate constant from compartment 3 (plasma) to the brain
+    k_bbb = 0.02;  % Transfer rate constant from compartment 3 (plasma) to the brain
     k_brain_elim = 0.01;  % Elimination rate constant for the brain
     
     V1 = 100;    % Volume of compartment 1 (well-perfused organs, mL)
@@ -40,7 +40,7 @@ function multi_compartment_with_bbb_model
     plot(t, C(:, 2), 'g', 'LineWidth', 2);
     plot(t, C(:, 3), 'b', 'LineWidth', 2);
     plot(t, C(:, 4), 'm', 'LineWidth', 2);
-    plot(t, C(:, 5), '--', 'LineWidth', 2);
+    plot(t, C(:, 5), , 'LineWidth', 2);
 
     plot(t, total_concentration, 'k--', 'LineWidth', 2); % Total concentration
     xlabel('Time (hours)');

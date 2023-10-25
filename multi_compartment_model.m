@@ -56,6 +56,7 @@ function multi_compartment_model()
     xlabel('Time (hours)');
     ylabel('Log Concentration (ln[mg/mL])');
     xlim([tspan(1), tspan(2)]);
+    ylim([0 log(100)])
     legend('Compartment 1', 'Compartment 2', 'Compartment 3', 'Compartment 4', 'Log Total Concentration');
     grid on;
 
@@ -71,7 +72,7 @@ function multi_compartment_model()
     semilogx(t, total_concentration, 'k--', 'LineWidth', 2); % Total concentration
     xlabel('Log Time (ln[hours])');
     ylabel('Concentration (mg/mL)');
-    xlim([tspan(1), tspan(2)]);
+    xlim([0.1, tspan(2)]);
     legend('Compartment 1', 'Compartment 2', 'Compartment 3', 'Compartment 4', 'Total Concentration');
     title('Concentration vs. Log Time');
     grid on;
